@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -16,10 +15,16 @@ class _HomepageState extends State<Homepage> {
         title: Text("Homepage"),
         centerTitle: true,
       ),
-
       body: Center(
         child: ElevatedButton(
-          onPressed: (){},
+          style: ButtonStyle(
+            fixedSize: MaterialStateProperty.all<Size>(
+              const Size(350, 40),
+            ),
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/dashboard');
+          },
           child: const Text("Go to Dashboard"),
         ),
       ),
