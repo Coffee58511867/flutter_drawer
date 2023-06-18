@@ -19,7 +19,7 @@ class _ContactPageState extends State<ContactPage> {
   }
 
   _sendingSMS() async {
-    var url = Uri.parse("sms:63338813");
+    var url = Uri.parse("sms:0026663338813");
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     } else {
@@ -28,7 +28,7 @@ class _ContactPageState extends State<ContactPage> {
   }
 
   _makingPhoneCall() async {
-    var url = Uri.parse("tel: 58511867");
+    var url = Uri.parse("tel: 0026658511867");
     if (await canLaunchUrl(url)) {
       await launchUrl(url);
     } else {

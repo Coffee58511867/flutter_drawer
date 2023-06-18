@@ -73,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
 			title: const Text(' Saved Videos '),
 			onTap: () {
 				Navigator.pop(context);
+
 			},
 			),
 			ListTile(
@@ -80,6 +81,7 @@ class _MyHomePageState extends State<MyHomePage> {
 			title: const Text(' Edit Profile '),
 			onTap: () {
 				Navigator.pop(context);
+         Navigator.pushReplacementNamed(context, '/contact');
 			},
 			),
 			ListTile(
@@ -95,4 +97,21 @@ class _MyHomePageState extends State<MyHomePage> {
 	), //Drawer
 	);
 }
+}
+
+
+class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  @override
+  Widget build(BuildContext context) {
+    return const Center(
+      child: Text("I AM CENTER FROM LOGOUT", style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.w500),),
+    );
+  }
 }
