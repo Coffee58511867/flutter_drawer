@@ -20,8 +20,16 @@ class _ContactPageState extends State<ContactPage> {
           width: double.infinity,
           color: Colors.purple,
           margin: const EdgeInsets.all(20),
-          child: const Text("Hello! i am inside a container!",
-              style: TextStyle(fontSize: 20)),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(onPressed: (){}, child: const Text("Send Email to us")),
+              const SizedBox(height: 20.0,),
+              ElevatedButton(onPressed: (){}, child: const Text("Call Us Here")),
+              const SizedBox(height: 20.0,),
+              ElevatedButton(onPressed: (){}, child: const Text("Send us SMS"))
+            ],
+          ),
         ),
       );
   }

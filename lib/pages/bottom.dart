@@ -91,12 +91,23 @@ class ListPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Icon(Icons.list, size: 30),
         Text("List Page", style: TextStyle(fontSize: 24)),
+         ElevatedButton(
+          style: ButtonStyle(
+            fixedSize: MaterialStateProperty.all<Size>(
+              const Size(350, 40),
+            ),
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/drawer');
+          },
+          child: const Text("Go to Dashboard"),
+        ),
       ],
     );
   }
@@ -107,12 +118,23 @@ class SearchPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Column(
+    return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Icon(Icons.search, size: 30),
         Text("Search Page", style: TextStyle(fontSize: 24)),
+         ElevatedButton(
+          style: ButtonStyle(
+            fixedSize: MaterialStateProperty.all<Size>(
+              const Size(350, 40),
+            ),
+          ),
+          onPressed: () {
+            Navigator.pushNamed(context, '/contact');
+          },
+          child: const Text("Go to Dashboard"),
+        ),
       ],
     );
   }
