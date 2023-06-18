@@ -1,5 +1,4 @@
 import 'package:drawer_app/home.dart';
-import 'package:drawer_app/pages/bottom.dart';
 import 'package:drawer_app/pages/contact.dart';
 import 'package:drawer_app/pages/drawer.dart';
 import 'package:flutter/material.dart';
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const Homepage(),
-        '/dashboard': (context) => const FancyBottomNavBarRun(),
         '/drawer': (context) => const MyHomePage(),
         '/contact':(context) => const ContactPage(),
       },

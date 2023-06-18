@@ -14,6 +14,7 @@ class _MyHomePageState extends State<MyHomePage> {
 	return Scaffold(
 	appBar: AppBar(
 		title: Text("Flutter Drawer"),
+    centerTitle: true,
 		backgroundColor: Colors.green,
 	),
 	body: const Center(
@@ -86,7 +87,7 @@ class _MyHomePageState extends State<MyHomePage> {
 			title: const Text('LogOut'),
 			onTap: () {
 				Navigator.pop(context);
-        Navigator.pushNamed(context, '/');
+        Navigator.pushNamed(context, '/contact');
 			},
 			),
 		],

@@ -13,6 +13,7 @@ class _HomepageState extends State<Homepage> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Homepage"),
+        	backgroundColor: Colors.green,
         centerTitle: true,
       ),
       body: Center(
@@ -23,7 +24,7 @@ class _HomepageState extends State<Homepage> {
             ),
           ),
           onPressed: () {
-            Navigator.pushNamed(context, '/dashboard');
+            Navigator.pushNamed(context, '/drawer');
           },
           child: const Text("Go to Dashboard"),
         ),
